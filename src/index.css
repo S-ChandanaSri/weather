@@ -12,13 +12,18 @@ code {
     monospace;
 }
 .recentsearch {
+  
+  position: absolute;
+  top:62px;
   background-color: white;
-  width: 470px;
+  width:470px;
   z-index: 1;
+
   display: none;
-  padding: 1rem 0rem;
-  border-radius: 5px;
-  height: 200px; 
+  padding:1rem 0rem;
+  height: 150px; 
+  overflow-y: auto; 
+  
 }
 
 
@@ -28,11 +33,11 @@ code {
   transition: opacity 0.3s ease;
   position:absolute;
  top:3.1rem;
+ z-index: 1;
 
 
 }
 
-/* styles.css */
 
 .container {
 
@@ -55,6 +60,7 @@ code {
   position: absolute;
   padding: 0.8rem 10rem;
   border-radius: 20px;
+
 }
 
 .recentsearch {
@@ -70,6 +76,8 @@ code {
 }
 .search-item i {
   color: black;
+  cursor: pointer;
+  
 }
 .weather-image {
   width: 17%;
@@ -93,7 +101,8 @@ code {
   font-size: 1rem;
   position: absolute;
   top:1.2rem;
-  left:1rem
+  left:1rem;
+  cursor: pointer;
 }
 .weather-info .humidity {
   font-size: 1.5rem;
@@ -102,7 +111,11 @@ code {
   right: 10rem;
 }
 
-/* Add this media query at the end of your CSS file */
+.input-field::placeholder {
+  position: relative;
+  right: 7rem;
+}
+
 
 @media screen and (max-width: 600px) {
   .container {
@@ -153,7 +166,9 @@ code {
 
   .search-icon {
     position: relative;
+
   }
+ 
 
   .humidity {
     position: static;
