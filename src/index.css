@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.recentsearch {
+  background-color: white;
+  width: 470px;
+  z-index: 1;
+  display: none;
+  padding: 1rem 0rem;
+  border-radius: 5px;
+  height: 200px; 
+}
+
+
+.search:focus-within .recentsearch {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  position:absolute;
+ top:3.1rem;
+
+
+}
+
+/* styles.css */
+
+.container {
+
+  left: 22rem;
+  padding: 15rem 12rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+  background-color: skyblue;
+  width: 300px;
+  height: 650px;
+}
+.search {
+  display: flex;
+  position: relative;
+  bottom: 13rem;
+  left: 20rem;
+}
+.input-field {
+  border: none;
+  position: absolute;
+  padding: 0.8rem 10rem;
+  border-radius: 20px;
+}
+
+.recentsearch {
+  position: absolute;
+  bottom: 15rem;
+  left: 1.5rem;
+}
+
+.search-item {
+  margin-bottom: 0.3rem;
+  position: relative;
+  right: 9rem;
+}
+.search-item i {
+  color: black;
+}
+.weather-image {
+  width: 17%;
+  position: relative;
+  right: 5rem;
+  bottom: 10rem;
+}
+.weather-info {
+  position: absolute;
+  bottom: 2rem;
+  z-index: 1;
+  background-color: skyblue;
+  left: 28rem;
+}
+.search-icon-container {
+  
+  border-radius: 50%;
+  background-color: white;
+}
+.search-icon {
+  font-size: 1rem;
+  position: absolute;
+  top:1.2rem;
+  left:1rem
+}
+.weather-info .humidity {
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 4.4rem;
+  right: 10rem;
+}
+
+/* Add this media query at the end of your CSS file */
+
+@media screen and (max-width: 600px) {
+  .container {
+    left: 1rem;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+  }
+
+  .search {
+    display: block;
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  .recentsearch {
+    position: static;
+    display: block;
+    width: auto;
+    bottom: auto;
+    left: auto;
+    margin-top: 0.5rem;
+  }
+
+  .search-item {
+    position: static;
+    margin-bottom: 0.5rem;
+    right: auto;
+  }
+
+  .weather-image {
+    width: 100%;
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .weather-info {
+    position: static;
+    margin-top: 1rem;
+ 
+  }
+
+  .search-icon {
+    position: relative;
+  }
+
+  .humidity {
+    position: static;
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  /* Adjustments for screens below 1000px */
+  .container {
+    left: 1rem;
+    padding: 1rem;
+    width: auto;
+    height: 650px;
+  }
+
+  .search {
+    display: block;
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .input-field {
+    position: relative;
+    width: 50%;
+    padding: 0.8rem;
+    margin-right: 0.5rem;
+  }
+
+  
+
+  .search-item {
+    position: static;
+    margin-bottom: 0.5rem;
+    right: auto;
+  }
+
+  .weather-image {
+    width: 25%;
+    position: static;
+    margin-bottom: 1rem;
+  }
+
+  .weather-info {
+    position: static;
+    margin-top: 1rem;
+  }
+  .search-icon-container1{
+    position: static;
+  }
+
+  .search-icon {
+    position: static;
+  }
+
+  .humidity {
+    position: static;
+    margin-top: 1rem;
+  }
+}
