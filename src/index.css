@@ -176,7 +176,7 @@ code {
   }
 }
 @media screen and (max-width: 1000px) {
-  /* Adjustments for screens below 1000px */
+ 
   .container {
     left: 1rem;
     padding: 1rem;
